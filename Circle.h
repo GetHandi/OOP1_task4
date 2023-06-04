@@ -1,5 +1,8 @@
 #pragma once
+#include <numbers>
 #include "Shape.h"
+
+using std::numbers::pi;
 
 class Circle : public Shape
 {
@@ -21,9 +24,9 @@ public:
     void setRadius(double radius);
 
     /// переопределяемый метод расчета площади;
-    double area() override;
+    double area() const override;
 
     /// переопределяемый метод расчета периметра;
-    double perimeter() override;
+    double perimeter() const override;
 };
 

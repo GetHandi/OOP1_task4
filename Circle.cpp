@@ -17,15 +17,19 @@ double Circle::getRadius() const
 
 void Circle::setRadius(double radius)
 {
-	this->radius = radius;
+	if (radius >= 0)
+		this->radius = radius;
+	else
+		this->radius = 0;
 }
 
-double Circle::area()
+double Circle::area() const
 {
-	return 3.14 * radius * radius;
+	
+	return pi * radius * radius;
 }
 
-double Circle::perimeter()
+double Circle::perimeter() const
 {
-	return 2 * 3.14 * radius;
+	return 2 * pi * radius;
 }

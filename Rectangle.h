@@ -30,9 +30,9 @@ public:
     void setHeight(double height);
     
     /// переопределяемый метод расчета площади;
-    double area() override;
+    double area() const override;
     
     /// переопределяемый метод расчета периметра;
-    double perimeter() override;
+    double perimeter() const override;
 };
 

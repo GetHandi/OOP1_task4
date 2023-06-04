@@ -1,5 +1,6 @@
 #include "Shape.h"
 
+
 Shape::Shape()
 {
 	name = "<no_name>";
@@ -30,14 +31,4 @@ string Shape::getColour() const
 void Shape::setColour(string colour)
 {
 	this->colour = colour;
-}
-
-double Shape::area()
-{
-	return 0.0;
-}
-
-double Shape::perimeter()
-{
-	return 0.0;
 }

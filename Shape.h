@@ -32,10 +32,10 @@ public:
 	/// colour - цвет;
 	void setColour(string colour);
 	
-	/// виртуальный метод расчета площади;
-	virtual double area();
+	/// абстрактный метод расчета площади;
+	virtual double area() const = 0;
 	
-	/// виртуальный метод расчета периметра;
-	virtual double perimeter();
+	/// абстрактный метод расчета периметра;
+	virtual double perimeter() const = 0;
 };
 

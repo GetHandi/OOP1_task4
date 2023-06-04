@@ -19,7 +19,10 @@ double Rectangle::getWidth() const
 
 void Rectangle::setWidth(double width)
 {
-	this->width = width;
+	if(width >= 0)
+		this->width = width;
+	else
+		this->width = 0;
 }
 
 double Rectangle::getHeight() const
@@ -29,15 +32,18 @@ double Rectangle::getHeight() const
 
 void Rectangle::setHeight(double height)
 {
-	this->height = height;
+	if (width >= 0)
+		this->height = height;
+	else
+		this->height = 0;
 }
 
-double Rectangle::area()
+double Rectangle::area() const
 {
 	return  width * height;
 }
 
-double Rectangle::perimeter()
+double Rectangle::perimeter() const
 {
 	return 2 * (width + height);
 }
